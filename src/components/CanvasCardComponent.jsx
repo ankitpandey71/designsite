@@ -7,7 +7,7 @@ import { CanvasRevealEffect } from "./ui/Canvas-reveal-effect";
 export function CanvasCardComponent() {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-slate-600 w-full gap-4 mx-auto px-8">
+      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-gradient-to-tl from-slate-400 to-black-100 w-full gap-4 mx-auto px-8">
         <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
