@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className="border-custom-border bg-gradient-to-l from-slate-400 to-slate-900 border-r-2 z-10  m-2 ml-4 mr-4 p-4 rounded-xl">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center bg-white-100 rounded-md p-2 shadow-sm shadow-slate-400">
           <Image
             src="https://img.icons8.com/?size=100&id=BrfYSrYduPIn&format=png&color=000000"
             alt="Logo"

@@ -7,7 +7,7 @@ import { CanvasRevealEffect } from "./ui/Canvas-reveal-effect";
 export function CanvasCardComponent() {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
+      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-slate-600 w-full gap-4 mx-auto px-8">
         <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -66,7 +66,7 @@ const Card = ({ title, icon, children }) => {
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-emerald-900 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
       </div>
@@ -103,7 +103,7 @@ export const Icon = ({ className, ...rest }) => {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke="currentColor"
+      stroke="#ffffff"
       className={className}
       {...rest}
     >

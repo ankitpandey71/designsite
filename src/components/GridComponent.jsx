@@ -9,7 +9,7 @@ import {
 
 function GridComponent() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] mt-5">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
