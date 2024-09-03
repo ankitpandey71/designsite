@@ -8,13 +8,13 @@ export function CanvasCardComponent() {
   return (
     <>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-gradient-to-tl from-slate-400 to-black-100 w-full gap-4 mx-auto px-8">
-        <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
+        <Card title="Texhnology is rapidly growing" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Nisha is Munni" icon={<AceternityIcon />}>
+        <Card title="Do it more" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -27,7 +27,7 @@ export function CanvasCardComponent() {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<AceternityIcon />}>
+        <Card title="Tel me something" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -47,6 +47,7 @@ const Card = ({ title, icon, children }) => {
       onMouseLeave={() => setHovered(false)}
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] relative"
     >
+      <h1 className="text-white-200 text-center w-8">Click</h1>
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />

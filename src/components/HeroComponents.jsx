@@ -18,23 +18,17 @@ const HeroComponents = () => {
         <Spotlight className="top-28 h-[80vh] w-[20vw]" fill="blue" />
 
         {/* Hero Section */}
-        <div className="relative flex flex-col items-center justify-center h-[50rem] bg-white dark:bg-black bg-grid-black/[0.2] dark:bg-grid-white/[0.2]">
-          {/* Masking effect for background */}
-          <div className="absolute inset-0 pointer-events-none flex items-center justify-center bg-white dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-
-          {/* Headline */}
-          <h2 className="z-10 text-xs tracking-widest text-center uppercase text-blue-100 max-w-xs">
-            Dynamic Web Magic with Next.js
-          </h2>
-
-          {/* Animated Text Effect */}
+        <div className="h-[50rem] w-full relative flex items-center justify-center flex-col bg-gradient-to-r from-blue-900 via-purple-900 to-black-200">
+          {/* Radial gradient for the container to give a faded look */}
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent 20%,black)]"></div>
+          <p className="text-4xl sm:text-7xl font-bold relative z-20 text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 py-8">
+            Crafting Digital Experiences with Precision and Passion
+          </p>
           <TextGenerateEffect
-            className="z-10 text-center text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800 dark:text-white"
-            words="Transforming Concepts into Seamless Experiences"
+            className="z-10 text-center text-3xl md:text-5xl lg:text-6xl font-bold text-white mt-4"
+            words="Bringing Ideas to Life in a Digital World"
           />
-
-          {/* Shimmer Button */}
-          <a href="#about" className="z-10 mt-6">
+          <a href="#about" className="z-10 mt-8">
             <ShimmerButton />
           </a>
         </div>
